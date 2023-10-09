@@ -1,0 +1,121 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    width: 100%;
+    color: #0794f1;
+}
+
+.userName {
+    text-align: end;
+}
+
+nav {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    /* Cor do texto */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    text-align: center;
+}
+
+.login {
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px rgb(77, 77, 77);
+}
+
+.home {}
+
+form input,
+button {
+    font-size: 30px;
+    width: 90%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.cadastro {
+    width: 50%;
+    margin: 20px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.retorno {
+    width: 50%;
+    height: 366px;
+    margin: 20px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.messages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.errors {
+    position: fixed;
+    top: 50px;
+    background-color: rgb(253, 187, 187);
+    color: red;
+    width: 600px;
+}
+
+.success {
+    position: fixed;
+    top: 50px;
+    background-color: rgb(187, 253, 189);
+    color: rgb(34, 113, 5);
+    width: 600px;
+}

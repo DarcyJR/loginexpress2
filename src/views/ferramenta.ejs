@@ -1,0 +1,16 @@
+<%- include('includes/head') %>
+    <%- include('includes/nav') %>
+
+        <body>
+            <div class="container">
+                <div class="home">
+                    <h1>Ferramenta</h1>
+                    <h6>
+                        <form action="/ferramenta/upload" method="POST">
+                            <input type="file" name="pdf" accept=".pdf" required>
+                            <button type="submit">Converter</button>
+                        </form>
+                    </h6>
+                </div>
+            </div>
+            <%- include('includes/footer') %>

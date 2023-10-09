@@ -1,0 +1,33 @@
+<%- include('includes/head') %>
+    <%- include('includes/nav') %>
+        <%- include('includes/messages') %>
+            <div class="container">
+                <div class="cadastro">
+                    <h1>Cadastro</h1>
+                    <form action="/login/cadastro" method="post">
+                        <input type="hidden" name="_csrf" value="<%=csrfToken%>"><!--token de login e seção-->
+                        <div>
+                            <label>Nome:</label><br>
+                            <input type="text" name="nome" id="">
+                        </div>
+                        <div>
+                            <label>Email:</label><br>
+                            <input type="email" name="email" id="">
+                        </div>
+                        <div>
+                            <label for="">Senha:</label><br>
+                            <input type="password" name="password" id="">
+                        </div>
+                        <div>
+                            <button type="submit">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="retorno">
+                    
+                </div>
+                <!--<div class="cadastro">
+                    <a href="/home">Voltar</a>
+                </div>-->
+            </div>
+            <%- include('includes/footer') %>

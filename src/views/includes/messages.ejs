@@ -1,0 +1,17 @@
+<div class="messages">
+    <% if(errors.length> 0) {%>
+        <div class="errors">
+            <%errors.forEach(erro=> {%>
+                <%=erro%><br>
+                    <%});%>
+        </div>
+        <% } %>
+
+            <% if(success.length> 0) {%>
+                <div class="success">
+                    <%success.forEach(success=> {%>
+                        <%=success%><br>
+                            <%});%>
+                </div>
+                <% } %>
+</div>

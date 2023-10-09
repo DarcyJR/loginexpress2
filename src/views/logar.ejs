@@ -1,0 +1,10 @@
+<%- include('includes/head') %>
+
+<body>
+    <div class="container">
+        <p>Vá para a tela inicial</p>
+        <p><% if(!user){%>
+            <a href="/logout">Login</a>
+        <% }%></p>
+    </div>
+<%- include('includes/footer') %>
